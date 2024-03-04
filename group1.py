@@ -15,8 +15,27 @@ def hammer_task_0():
 def memberOne():
     pass
   
-def memberTwo():
-    pass
+def memberTwo(string):
+    unicode_string_list= []
+    unicode_string_list_switch = []
+    # Iterate through each character in the string and print its Unicode code point
+    for char in string:
+        unicode_string_list.append(ord(char))
+        if char == " ":
+            unicode_string_list_switch.append(ord(char)) 
+        else:
+            unicode_string_list_switch.append(ord(char)+1)
+
+    
+    
+    print(unicode_string_list)
+    print(unicode_string_list_switch)
+
+    decoded_string = ''.join(chr(code_point) for code_point in unicode_string_list_switch)
+
+    # Print the decoded string
+    print(decoded_string)
+    return decoded_string
   
 def memberThree():
     pass
