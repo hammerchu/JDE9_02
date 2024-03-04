@@ -53,7 +53,7 @@ text1 = r'C:\Users\GenHK\JDE9_02\news.txt'
 f = open(text1,'r',encoding="utf-8")
 v = f.read()
 
-def encode_shifting(text, shift):
+def sunny_shifting(text, shift):
     encoded_text = ""
     for char in text:
         if char.isalpha():
@@ -68,7 +68,7 @@ def encode_shifting(text, shift):
 
 paragraph = v
 shift_value = 1
-encoded_paragraph = encode_shifting(paragraph, shift_value)
+encoded_paragraph = sunny_shifting(paragraph, shift_value)
 
 print("Original: ", paragraph)
 print("Encoded_replace: ", encoded_paragraph)
