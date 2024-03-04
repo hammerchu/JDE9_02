@@ -1,36 +1,18 @@
-import random
+def reverse_words(sentence):
+    # Split the sentence into words
+    words = sentence.split()
 
-text = './news.txt'
-f = open(text, "r")
-print(f.read())
+    # Reverse each word and join them back
+    reversed_words = [word[::-1] for word in words]
+    reversed_sentence = ' '.join(reversed_words)
 
+    return reversed_sentence
 
-def hammer_task_0():
-    '''example function'''
+# Example usage:
+input_sentence = "I am a boy"
+reversed_result = reverse_words(input_sentence)
+print(f"Reversed sentence: {reversed_result}")
 
-    teamJDE = ['hammer', 'billy', 'chistina']
-    result = random.sample(teamJDE, 1)
-    return result
-  
-def memberOne():
-    pass
-  
-def memberTwo():
-    pass
-  
-def memberThree():
-    pass
-  
-def memberFour():
-    pass
-
-
-if __name__ == "__main__":
-    print(hammer())
-    print('call memberOne() ')
-    print('call memberTwo() ')
-    print('call memberThree() ')
-    print('call memberFour() ')
    
     # Task-1 - count the total number of words in the prargraph that contains vowel characters(a, e, i, o u)
     
