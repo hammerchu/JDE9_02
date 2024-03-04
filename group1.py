@@ -40,9 +40,24 @@ def memberTwo(filename, shift=1):  # Kenneth task
 
     return result
   
-def memberThree():
-    pass
-  
+def memberThree(filename):
+    # Reverse the entire paragraph line by line e.g. I am a boy -> yob a ma I
+    with open(filename, 'r') as file:
+        paragraph = file.read()
+
+def memberThree(filename):
+    with open(filename, 'r') as file:
+        lines = file.readlines()
+
+    reversed_paragraph = ""
+    for line in lines:
+        words = line.split()
+        for word in words:
+            reversed_paragraph += word[::-1] + " "
+        reversed_paragraph += '\n'
+    
+    return reversed_paragraph.rstrip('\n')
+
 def memberFour():
     pass
 
@@ -54,6 +69,7 @@ if __name__ == "__main__":
     print('call memberTwo() ')
     print(memberTwo(text))
     print('call memberThree() ')
+    print(memberThree(text))
     print('call memberFour() ')
    
     # Task-1 - count the total number of words in the prargraph that contains vowel characters(a, e, i, o u)
