@@ -76,3 +76,4 @@ print("Encoded_replace: ", encoded_paragraph)
 #print(shift(r'C:\Users\GenHK\JDE9_02\news.txt',1))
 
 
+
