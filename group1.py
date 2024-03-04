@@ -18,18 +18,22 @@ def memberOne():
 def memberTwo():
     pass
   
-def memberThree():
-    pass
+def Enoch_task_3(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()  # 讀取文件中的每一行
+        reversed_lines = [line.rstrip()[::-1] for line in lines]  # 反轉每一行的字符順序
+        reversed_paragraph = '\n'.join(reversed_lines)  # 將反轉後的行重新組合成段落
+        return reversed_paragraph
   
 def memberFour():
     pass
 
 
 if __name__ == "__main__":
-    print(hammer())
+    print(hammer_task_0())
     print('call memberOne() ')
     print('call memberTwo() ')
-    print('call memberThree() ')
+    print('Task3:',Enoch_task_3(text))
     print('call memberFour() ')
    
     # Task-1 - count the total number of words in the prargraph that contains vowel characters(a, e, i, o u)
