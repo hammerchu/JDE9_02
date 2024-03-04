@@ -9,6 +9,7 @@ def hammer_task_0():
     '''example function'''
 
     teamJDE = ['hammer', 'billy', 'chistina']
+    print('hello JDE')
     result = random.sample(teamJDE, 1)
     return result
   
