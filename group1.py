@@ -1,8 +1,8 @@
 import random
 
-text = './news.txt'
-f = open(text, "r")
-print(f.read())
+# text = './news.txt'
+# f = open(text, "r")
+# print(f.read())
 
 
 def hammer_task_0():
@@ -25,7 +25,7 @@ def memberOne(string):
                 break
     return count 
   
-def memberTwo(string,position:int):
+def memberTwo(string,position:int=1):
     unicode_string_list= []
     unicode_string_list_switch = []
     # Iterate through each character in the string and print its Unicode code point
@@ -59,14 +59,14 @@ def memberThree(string):
     combine_str = ''.join(char for char in reverse_list)
     print(combine_str)
   
-def memberFour():
-    pass
+def memberFour(str):
+    return str[::-1]
 
 
 if __name__ == "__main__":
-    print(hammer())
+    # print(hammer())
     print('call memberOne() ')
-    print(memberTwo('I am a boy',1))
+    print(memberTwo('I am a boy'))
     print('call memberThree() ')
     print('call memberFour() ')
    
