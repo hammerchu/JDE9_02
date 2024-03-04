@@ -1,8 +1,7 @@
 import random
-
 text = './news.txt'
 f = open(text, "r")
-print(f.read())
+# print(f.read())
 
 
 def hammer_task_0():
@@ -24,14 +23,32 @@ def memberThree():
 def memberFour():
     pass
 
+def memberFive(text):
+    print('----------------')
+    f=open(text,'r')
+
+    lines=f.readlines()
+    #task 3 
+    new_p=[]
+    for line in lines:
+        for l in reversed(line):
+            new_p.append(l)
+        print('----')
+    print(''.join(new_p))
+
+    
+    # print(words)
+    pass
 
 if __name__ == "__main__":
-    print(hammer())
+    # print(hammer())
+    text = './news.txt'
     print('call memberOne() ')
-    print('call memberTwo() ')
+    print('call memberTwo() ')  
     print('call memberThree() ')
     print('call memberFour() ')
-   
+    memberFive(text)
+
     # Task-1 - count the total number of words in the prargraph that contains vowel characters(a, e, i, o u)
     
     # Task-2 - encode the paragraph by shifting the position of each character by a variable value e.g. I am a boy (1) -> J bn b cpz
