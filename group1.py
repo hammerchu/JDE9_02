@@ -12,8 +12,18 @@ def hammer_task_0():
     result = random.sample(teamJDE, 1)
     return result
   
-def memberOne():
-    pass
+def memberOne(string):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    str_list = string.split(' ')
+    count = 0 
+
+    for word in str_list:
+        for vowel in vowels:
+            if vowel in word:
+                print(f'vowel: {vowel} in word : {word}')
+                count += 1
+                break
+    return count 
   
 def memberTwo(string,position:int):
     unicode_string_list= []
@@ -37,8 +47,17 @@ def memberTwo(string,position:int):
     print(decoded_string)
     return decoded_string
   
-def memberThree():
-    pass
+def memberThree(string):
+    reverse_list = []
+    
+    for char in string:
+        reverse_list = [char] + reverse_list
+
+    # printing resultant list 
+    print("Reverse list: " + str(reverse_list))
+
+    combine_str = ''.join(char for char in reverse_list)
+    print(combine_str)
   
 def memberFour():
     pass
