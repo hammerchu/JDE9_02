@@ -24,15 +24,6 @@ def memberThree():
 def memberFour():
     pass
 
-def task_1():
-    import re
-    prargraph =  open('./news.txt')
-    letter_a = len(re.findall("a", prargraph))
-    letter_e = len(re.findall("e", prargraph))
-    letter_i = len(re.findall("i", prargraph))
-    letter_o = len(re.findall("o", prargraph))
-    letter_u = len(re.findall("u", prargraph))
-    
 import string
 
 def task_01(string, vowels):
@@ -63,5 +54,6 @@ if __name__ == "__main__":
     # Task-2 - encode the paragraph by shifting the position of each character by a variable value e.g. I am a boy (1) -> J bn b cpz
 
     # Task-3 - Reverse the entire paragraph line by line e.g. I am a boy -> yob a ma I
+    
 
     # Task-4 - Reverse the order of character of each word e.g. I am a boy -> I ma a yob
