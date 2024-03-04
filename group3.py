@@ -4,6 +4,7 @@ text = './news.txt'
 f = open(text, "r")
 print(f.read())
 
+#123
 
 def hammer_task_0():
     '''example function'''
@@ -21,8 +22,14 @@ def memberTwo():
 def memberThree():
     pass
   
-def memberFour():
-    pass
+def reverse_words(sentences):
+    words = sentence.split()
+    reversed_words = []
+    for word in words:
+        reversed_word = word[::-1]
+        reversed_words.append(reversed_word)
+    reversed_sentence = ' '.join(reversed_words)
+    return reversed_sentence
 
 
 if __name__ == "__main__":
