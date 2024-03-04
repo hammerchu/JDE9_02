@@ -12,7 +12,7 @@ def hammer_task_0():
     result = random.sample(teamJDE, 1)
     return result
   
-def memberOne(string):
+def chinny_task_1(string):
     vowels = ['a', 'e', 'i', 'o', 'u']
     str_list = string.split(' ')
     count = 0 
@@ -25,7 +25,7 @@ def memberOne(string):
                 break
     return count 
   
-def memberTwo(string,position:int=1):
+def chinny_task_2(string,position:int=1):
     unicode_string_list= []
     unicode_string_list_switch = []
     # Iterate through each character in the string and print its Unicode code point
@@ -36,18 +36,14 @@ def memberTwo(string,position:int=1):
         else:
             unicode_string_list_switch.append(ord(char)+position)
 
-    
-    
     print(unicode_string_list)
     print(unicode_string_list_switch)
 
     decoded_string = ''.join(chr(code_point) for code_point in unicode_string_list_switch)
 
-    # Print the decoded string
-    print(decoded_string)
     return decoded_string
   
-def memberThree(string):
+def chinny_task_3(string):
     reverse_list = []
     
     for char in string:
@@ -57,18 +53,22 @@ def memberThree(string):
     print("Reverse list: " + str(reverse_list))
 
     combine_str = ''.join(char for char in reverse_list)
-    print(combine_str)
+    return combine_str
   
-def memberFour(str):
-    return str[::-1]
+def chinny_task_4(str):
+    reversed_words = str[::-1].split(" ")
+    reversed_words.reverse()
+    combined_str = ' '.join(word for word in reversed_words)
+    return combined_str
 
 
 if __name__ == "__main__":
     # print(hammer())
     print('call memberOne() ')
-    print(memberTwo('I am a boy'))
-    print('call memberThree() ')
-    print('call memberFour() ')
+    # print(chinny_task_1('I am a boy'))
+    # print(chinny_task_2('I am a boy'))
+    # print(chinny_task_3('I am a boy'))
+    print(chinny_task_4('I am a boy'))
    
     # Task-1 - count the total number of words in the prargraph that contains vowel characters(a, e, i, o u)
     
