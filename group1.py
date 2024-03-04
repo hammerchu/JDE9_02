@@ -15,7 +15,7 @@ def hammer_task_0():
 def memberOne():
     pass
   
-def memberTwo(string):
+def memberTwo(string,position:int):
     unicode_string_list= []
     unicode_string_list_switch = []
     # Iterate through each character in the string and print its Unicode code point
@@ -24,7 +24,7 @@ def memberTwo(string):
         if char == " ":
             unicode_string_list_switch.append(ord(char)) 
         else:
-            unicode_string_list_switch.append(ord(char)+1)
+            unicode_string_list_switch.append(ord(char)+position)
 
     
     
@@ -47,7 +47,7 @@ def memberFour():
 if __name__ == "__main__":
     print(hammer())
     print('call memberOne() ')
-    print('call memberTwo() ')
+    print(memberTwo('I am a boy',1))
     print('call memberThree() ')
     print('call memberFour() ')
    
